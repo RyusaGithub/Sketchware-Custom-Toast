@@ -1,0 +1,6 @@
+//if you want to make it long make it Toast.makeText(getApplicationContext(),"",Toast.LENGTH_LONG);
+LayoutInflater i = getLayoutInflater();
+View v = i.inflate(R.layout.YOURCUSTOMVIEWNAMEHERE,(ViewGroup)findViewById(R.id.linear1));
+Toast t = Toast.makeText(getApplicationContext(),"",Toast.LENGTH_SHORT);
+t.setView(v);
+t.show();
